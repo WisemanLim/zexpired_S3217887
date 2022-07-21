@@ -35,8 +35,8 @@ app.post("/readPython", (request, response) => {
   // const python = spawn('python3', ['public/script.py', "hi", "Duyen"]);
   // const python = spawn('python3', ['caller_node/script2.py', "Params#1"]);
   // const python = spawn('python', ['public/script.py']);
-  const python_env = `${__dirname}/caller_node/bin/python3`;
-  const python = spawn(python_env, ['caller_node/tensorflow_test2.py', "Params#1"]);
+  const python_env = `${__dirname}/python/bin/python3`;
+  const python = spawn(python_env, ['python/tensorflow_test2.py', "Params#1"]);
 
   // collect data from script
   python.stdout.on('data', (data) => {
@@ -61,14 +61,14 @@ const { exit } = require("process");
 // call python : post
 app.post("/readPython2", (request, response, next) => {
 	// Add virtual environment
-	const python_env = `${__dirname}/caller_node/bin/python3`;
+	const python_env = `${__dirname}/python/bin/python3`;
 
 	//Here are the option object in which arguments can be passed for the test.js.
 	let options = {
 		mode: 'text',
 		pythonPath: python_env, // virtual environment
 		pythonOptions: ['-u'], // get print results in real-time
-		scriptPath: 'caller_node/', //If you are having python_test.py script in same folder, then it's optional.
+		scriptPath: 'public/', //If you are having python_test.py script in same folder, then it's optional.
 		args: ['shubhamk314'] //An argument which can be accessed in the script using sys.argv[1]
 	};
 	
