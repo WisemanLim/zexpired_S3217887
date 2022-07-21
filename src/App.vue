@@ -61,7 +61,7 @@ export default {
   },
 
   data: () => ({
-    drawer: false,
+    drawer: true,
     items: [
       { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
       { title: 'Grid System', icon: 'mdi-view-dashboard', to: 'grid-system' },

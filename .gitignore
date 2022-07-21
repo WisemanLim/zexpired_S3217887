@@ -22,5 +22,7 @@ pnpm-debug.log*
 *.sw?
 
 ignore_ref
-ignore_test
 yarn.lock
+/ignore_test/node-server/datasets
+/ignore_test/node-server/my_pet_classifier
+/ignore_test/node-server/python
