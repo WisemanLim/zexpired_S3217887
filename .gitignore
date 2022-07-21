@@ -1,0 +1,32 @@
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+[]ref.site
+yarn.lock
+[]test/node-server/caller_node/bin
+[]test/node-server/caller_node/include
+[]test/node-server/caller_node/lib
+[]test/node-server/datasets
+[]test/node-server/my_pet_classifier
+[]test/node-server/node_modules
+[]test/node-server/caller_node/pyvenv.cfg
+[]test/node-server/yarn.lock
