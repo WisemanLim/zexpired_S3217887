@@ -21,7 +21,7 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-ignore_ref
+/ignore_ref
 yarn.lock
 /ignore_test/node-server/datasets
 /ignore_test/node-server/my_pet_classifier
