@@ -21,4 +21,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-[]ref.site
+ignore_ref
+ignore_test
+yarn.lock
