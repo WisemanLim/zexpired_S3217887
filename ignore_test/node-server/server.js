@@ -36,7 +36,7 @@ app.post("/readPython", (request, response) => {
   // const python = spawn('python3', ['caller_node/script2.py', "Params#1"]);
   // const python = spawn('python', ['public/script.py']);
   const python_env = `${__dirname}/python/bin/python3`;
-  const python = spawn(python_env, ['python/tensorflow_test2.py', "Params#1"]);
+  const python = spawn(python_env, ['public/tensorflow_test2.py', "Params#1"]);
 
   // collect data from script
   python.stdout.on('data', (data) => {
